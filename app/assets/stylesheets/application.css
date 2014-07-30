@@ -17,7 +17,7 @@
  *= require css/plugins/owl-carousel/owl.transitions
  *= require css/plugins/magnific-popup
  *= require css/plugins/jquery.fs.wallpaper
- #= require css/vitality-red
+ *= require css/vitality-red
 
  *= require_self
  */
