@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(version: 20140724200736) do
     t.datetime "updated_at"
     t.datetime "last_sent"
     t.string   "service_name"
-    t.string   "service"
     t.string   "last_alert_status"
   end
 

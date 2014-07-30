@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
-
-gem 'rails_12factor', group: :production
+# ruby "2.1.0"
+# gem 'rails_12factor', group: :production
 gem 'rails', '4.1.0'
 # gem 'better_errors'
 # gem 'binding_of_caller'
@@ -23,6 +23,7 @@ gem 'devise'
 gem 'figaro'
 
 group :production do
+gem 'rails_12factor'
 gem "pg"
 end
 gem 'nokogiri'
