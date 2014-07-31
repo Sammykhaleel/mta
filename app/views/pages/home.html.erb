@@ -62,13 +62,33 @@
             <p><%= link_to 'Add Alerts', new_alert_path %></p>
         </div>
     <%else%>
-        <div class="container">
+
+    <section id="alerts">
+     
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <h1>My alerts</h1>
+                    <hr class="colored">
+                     <p>Create alerts for trains you use to get around!</p>
+                    <div class="push_button blue-button">
+                        <p><%= link_to 'Add alerts', user_session_path %></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+        <!-- <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h1>Alert List</h1>
                     <p>Create alerts for trains you use to get around!</p>
                 </div>
-         </div>
+         </div> -->
         
         <p id="notice"><%= notice %></p>
 
@@ -108,21 +128,39 @@
     <% end %>
 </div>
     <%else%>
+<<<<<<< HEAD
         
     <section id="alerts">
+=======
+    <div class="push_button blue-button">
+        <p><%= link_to 'login to add alerts', user_session_path %></p>
+    </div>
+
+      <section id="alerts">
+>>>>>>> Fixed my alert section and added button.  Needs styling
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-lg-12">
                     <h1>My alerts</h1>
                     <hr class="colored">
+<<<<<<< HEAD
                     <div class="push_button blue-button">
                         <p><%= link_to 'Add alerts', user_session_path %></p>
                     </div>
 
+=======
+                    <p id="alerts-button"><%= link_to 'Add alerts', user_session_path, :class => 'btn btn-default' %></p>
+>>>>>>> Fixed my alert section and added button.  Needs styling
                 </div>
             </div>
         </div>
     </section>
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> Fixed my alert section and added button.  Needs styling
     <%end%>
 
 
@@ -208,7 +246,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
-                <!-- Text can go here -->
+                <!-- Text can go here
             </div>
         </div>
     </div>
