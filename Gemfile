@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
+<<<<<<< HEAD
 ruby "2.1.0"
+=======
+# ruby "2.1.0"
+# gem 'rails_12factor', group: :production
+>>>>>>> 67e9e5b81523f1a3007e82745e323d706e9d6968
 gem 'rails', '4.1.0'
 # gem 'better_errors'
 # gem 'binding_of_caller'
