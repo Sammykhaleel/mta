@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   get "alerts" => "recipients#alerts"
   get "go" => "alerts#go", as: 'go_alert'
   get "setting" => "pages#setting"
+  get "*path", to: redirect('/')
 
   #get "/appointmentreminder/makecall" => "twilio#makecall"
   

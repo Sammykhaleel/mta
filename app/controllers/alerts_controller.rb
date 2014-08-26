@@ -1,6 +1,6 @@
 class AlertsController < ApplicationController
    def index
-    @alerts = Alert.all
+    @alerts = current_user.alerts
    end
    
    def new
@@ -8,8 +8,10 @@ class AlertsController < ApplicationController
    end
 
    def show
-    @alert = Alert.find(params[:id])
+    @alert = current_user.alerts.find(params[:id])
     @train_name = @alert.service_name
+  rescue ActiveRecord::RecordNotFound
+    redirect_to root_path
    end
   
   def create  
@@ -25,7 +27,9 @@ class AlertsController < ApplicationController
   end
 
   def edit
-    @alert = Alert.find(params[:id])
+    @alert= current_user.alerts.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+    redirect_to root_path
   end
 
   def update

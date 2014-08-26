@@ -20,7 +20,7 @@
         <td><b><font size="3" color="black"><%= recipient.phone_number %></font></b>
         <td><b><font size="3" color="black"><%= recipient.email_address %></font></b>
         <td><b><font size="3" color="black"><%= recipient.email_template %></font></b>
-        <td><%= link_to 'Show', alerts_path %></td>
+        <td><%= link_to 'Show', recipient_path(recipient) %></td>
         <td><%= link_to 'Edit', edit_recipient_path(recipient) %></td>
         <td><%= link_to 'Destroy', recipient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
